@@ -1,0 +1,22 @@
+.Box {
+	background: #9b59b6;
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: white;
+	font-size: 17px;
+	border-radius: 20px;
+}
+.Animated {
+	transition-property: background, border-radius;
+	transition-duration: 5s, 5s;
+}
+
+.Box:hover {
+	background: #e74c3c;
+	transform-origin: left top;
+	transform: scale(5) rotate(45deg);
+	border-radius: 50%;
+	/*opacity: 0.5;*/
+}

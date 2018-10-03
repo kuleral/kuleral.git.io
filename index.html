@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8"/>
+		<title> SELF EVALUATION OF CODE BASE TECH </title>
+		<script>
+			var name_state = "<h1> HELLO WORLD! </h1>";
+				document.write(name_state);
+		</script>
+		
+		<script>
+			var text_t = "one";
+			function change_para(){
+				var date = 2018;
+				var para_name = document.getElementById('para');
+				if (text_t == "one"){
+				para_name.innerHTML = ('<strong> <em> Wow world!</em> its so cool that it worked</strong> ' + '<em>' + date + '</em>');
+				text_t = "two";
+			}else{
+				para_name.innerHTML = document.getElementById('para');
+				text_t = "one";
+			}
+			}
+		</script>
+		<script>
+			
+			var Image_tracker = 'f';
+			function change_image(){
+				var image = document.getElementById('socials');
+				if (Image_tracker == 'f'){
+					image.src = 'lap.png';
+					Image_tracker = 't';
+				}else{
+					image.src = '22386.jpg';
+					Image_tracker = 'f';
+				}
+			}
+			setInterval ('change_image();',5000);
+		</script>
+	</head>
+	<body>
+	
+			<p style="color:red" id="para" onclick="change_para();"> <strong>This paragraph should respond to my click!</strong> </p>
+		<div>
+			<img src="22386.jpg" alt="pic_slay" id="socials" width="1200" onclick="change_image();"/>
+		</div>
+	</body>
+</html>
